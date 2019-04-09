@@ -1,0 +1,113 @@
+.is-horizontal-center {
+  justify-content: center;
+  margin-top: 2vh;
+  padding-top: 4vh;
+}
+
+#contact
+{
+    color: grey;
+}
+
+#download
+{
+	color: rgba(0,0,0,0.7);
+	padding-right: 2vw;
+	padding-left: 2vw;
+}
+
+.details
+{
+	text-align: center;
+}
+
+#blog
+{
+	opacity: 0.5;
+}
+
+.logo
+{
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.button {
+	border: none;
+	background: #279AF1;
+	padding: 10px;
+	font-size: 18px;
+	border-radius: 5px;
+	position: relative;
+	box-sizing: border-box;
+	transition: all 500ms ease; 
+}
+
+.button:hover {
+	background: rgba(0,0,0,0);
+	color: #279AF1;
+	box-shadow: inset 0 0 0 3px #279AF1;
+}
+
+#b4
+{
+	background-color: #ff595e;
+}
+
+.footer
+{
+	background-color: #eeebd0
+}
+
+#download
+{
+	color: white;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.study
+{
+	padding: 0px;
+}
+
+.navbar
+{
+	box-shadow: 0px 1px 19px 0px black;
+}
+
+.search
+{
+	height: 5vh;
+	margin-top: 2vh;
+}
+
+.space
+{
+	padding-top: 30px;
+	display: block;
+}
+
+.terms
+{
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.main-title
+{
+	padding-bottom: 20px;
+}
+
+.align
+{
+	margin-top: 10%;
+}
+
+.card
+{
+	background-color:#fffafa;
+}
