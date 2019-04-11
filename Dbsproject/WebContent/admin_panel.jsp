@@ -43,7 +43,7 @@
         </div>
         <div class="column is-half">
           <div>
-          <div class="card">
+          <div class="card" OnClick=" location.href='donationcheck.jsp' ">
             <div class="card-image is-flex is-horizontal-center">
               <figure class="image is-128x128">
              <img class="is-rounded" src="https://bulma.io/images/placeholders/128x128.png">
