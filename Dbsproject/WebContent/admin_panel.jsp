@@ -67,64 +67,112 @@
         <div class="card">
           <div class="card-content">
             <form action="donate_back.jsp" method="POST">
+
               <div class="field">
-                <label class="label">First name:</label>
+                <label class="label">Kid ID:</label>
                 <div class="control has-icons-left has-icons-right">
-                  <input class="input is-rounded" name="firstname" type="text"
-                    placeholder="Enter First Name" required> <span
-                    class="icon is-small is-left"> <i class="fas fa-user"></i>
-                  </span>
-                </div>
-              </div>
-              <div class="field">
-                <label class="label">Last name:</label>
-                <div class="control has-icons-left has-icons-right">
-                  <input class="input is-rounded" name="lastname" type="text"
-                    placeholder="Enter Last Name"> <span
-                    class="icon is-small is-left"> <i class="fas fa-user"></i>
-                  </span>
-                </div>
-              </div>
-              <div class="field">
-                <label class="label">Email:</label>
-                <div class="control has-icons-left has-icons-right">
-                  <input class="input is-rounded" name="email" type="email"
-                    placeholder="Enter Email ID" required> <span
-                    class="icon is-small is-left"> <i
-                    class="fas fa-envelope"></i>
+                  <input class="input is-rounded" name="k_id" type="Number"
+                    placeholder="Enter kid id" required min="1" maxlength="11"> <span
+                    class="icon is-small is-left"> 
                   </span>
                 </div>
               </div>
 
               <div class="field">
-                <label class="label">Social Security Number:</label>
-                <p class="control has-icons-left">
-                  <input class="input is-rounded" name="ssn" type="password"
-                    placeholder="Social Security Number" required> <span
-                    class="icon is-small is-left"> <i class="fas fa-lock"></i>
+                <label class="label">Name:</label>
+                <div class="control has-icons-left has-icons-right">
+                  <input class="input is-rounded" name="name" type="text"
+                    placeholder="Enter name" required> <span
+                    class="icon is-small is-left"> <i class="fas fa-user"></i>
                   </span>
+                </div>
+              </div>
+
+              <div class="field">
+                <label class="label">Age:</label>
+                <div class="control has-icons-left has-icons-right">
+                  <input class="input is-rounded" name="age" type="Number"
+                    placeholder="Enter age" min="0"> <span
+                    class="icon is-small is-left"> 
+                  </span>
+                </div>
+              </div>
+
+              <div class="field">
+                <label class="label">Blood Group:</label>
+                <p class="control has-icons-left">
+                  <input class="input is-rounded" name="bloodgroup" type="text"
+                    placeholder="Blood Group" pattern="[A-z][A-z][-+]{2-3}"> <span
+                    class="icon is-small is-left"> 
                 </p>
               </div>
 
+              <div class="control">
+                <label class="label">Gender:</label>
+              <label class="radio">
+                <input type="radio" name="gender" checked="checked" value="1">
+                Male
+              </label>
+              <br>
+              <label class="radio">
+                <input type="radio" name="gender" value="2">
+                Female
+              </label>
+              <br>
+              </div>
+
               <div class="field">
-                <label class="label">Donate Item:</label>
+                <label class="label">Ethnicity:</label>
                 <div class="control has-icons-left has-icons-right">
-                  <input class="input is-rounded" name="item" type="text"
-                    placeholder="Enter Item Names" required>
+                  <input class="input is-rounded" name="ethnicity" type="text"
+                    placeholder="Enter ethnicity">
                 </div>
               </div>
 
               <div class="field">
-                <label class="label">Donate Funds:</label>
+                <label class="label">Birth Parent ID:</label>
                 <div class="control has-icons-left has-icons-right">
-                  <input class="input is-rounded" name="money" type="Number"
-                    placeholder="Enter amount" min="1000" max="200000">
+                  <input class="input is-rounded" name="bp_id" type="Number"
+                    placeholder="Enter birth parent id" min="1" maxlength="11"> <span
+                    class="icon is-small is-left"> 
+                  </span>
                 </div>
               </div>
+
+              <div class="field">
+                <label class="label">Adoptive ID:</label>
+                <div class="control has-icons-left has-icons-right">
+                  <input class="input is-rounded" name="ad_id" type="Number"
+                    placeholder="Enter adoptive parent id" min="1" maxlength="11"> <span
+                    class="icon is-small is-left"> 
+                  </span>
+                </div>
+              </div>
+
+              <div class="field">
+                <label class="label">Caretaker ID:</label>
+                <div class="control has-icons-left has-icons-right">
+                  <input class="input is-rounded" name="cid" type="Number"
+                    placeholder="Enter caretaker id" required min="1" maxlength="11"> <span
+                    class="icon is-small is-left"> 
+                  </span>
+                </div>
+              </div>
+
+              <div class="field">
+                <label class="label">Med ID:</label>
+                <div class="control has-icons-left has-icons-right">
+                  <input class="input is-rounded" name="med_id" type="Number"
+                    placeholder="Enter med id" required min="1" maxlength="11"> <span
+                    class="icon is-small is-left"> 
+                  </span>
+                </div>
+              </div>
+
               <br>
               <div class="field">
                 <div class="control">
-                  <center><button class="button is-link">Donate</button></center>
+                  <center><button class="button is-link">Add</button></center>
                 </div>
               </div>
             </form>
