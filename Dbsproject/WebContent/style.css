@@ -107,7 +107,20 @@
 	margin-top: 10%;
 }
 
-.card
+#hidden
 {
-	background-color:#fffafa;
+	display: none;
+}
+
+#hidden1
+{
+	display: none;
+	margin-bottom: 2em;
+}
+
+.logs
+{
+	float: right;
+	margin-right: 10vw;
+	margin-top: 5vh;
 }
