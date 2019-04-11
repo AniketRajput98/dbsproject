@@ -17,6 +17,14 @@
 <%@ page import="java.sql.*"%>
 </head>
 <body id="color">
+  <div class="field">
+            <div class="control">
+              <div class="btn btn-danger btn-md">
+                <button class="button is-danger logs"
+                  OnClick=" location.href='logout.jsp' ">Logout</button>
+              </div>
+            </div>
+          </div>
   <%
     Class.forName("com.mysql.jdbc.Driver");
     Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/fosterdb", "root", "1234");
@@ -24,7 +32,6 @@
     String query = "select * from donation";
     ResultSet rs = st.executeQuery(query);
   %>
-
   <div class="space"></div>
   <div class="columns animated fadeInUp" id="correction">
     <div class="column">
@@ -59,6 +66,8 @@
           </table>
         </div>
       </div>
+    </div>
+  </div>
     </div>
 </body>
 </html>
