@@ -14,7 +14,7 @@
   <body>
   <section class="hero is-fullheight is-bold  animated fadeInUp is-warning" id="b3">
     <div class="control">
-          <button class="button is-danger logs">Logout</button>
+          <button class="button is-danger logs" OnClick=" location.href='logout.jsp' ">Logout</button>
       </div>
   <div class="hero-body">
     <div class="container">
