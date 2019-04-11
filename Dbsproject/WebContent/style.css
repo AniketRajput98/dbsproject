@@ -126,7 +126,7 @@
 	background-color: hsl(48, 100%, 67%);
 }
 
-#hidden2
+#hidden2 , #hidden3 , #hidden4
 {
 	display: none;
 	margin-bottom: 2em;
