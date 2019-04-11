@@ -19,7 +19,7 @@
   <div class="hero-body">
     <div class="container">
       <h1 class="title main-title">
-        <center>Welcome</center>
+        <center>Welcome to Foster Care System</center>
       </h1>
       <div class="columns">
         <div class="column is-half">
@@ -53,7 +53,7 @@
       </div>
     </div>
   </div>
-</section>
+
 
 <div>
 <div class="columns animated fadeInUp">
@@ -160,7 +160,7 @@
               <div class="field">
                 <label class="label">Search by:</label>
                   <div class="control has-icons-left has-icons-right">
-                    <input class="input is-rounded" name="userid" type="text" placeholder="Enter Username" required>
+                    <input class="input is-rounded" name="userid" type="text" placeholder="Enter Details" required>
                       <span class="icon is-small is-left">
                       <i class="fas fa-user"></i>
                       </span>
@@ -179,6 +179,6 @@
     </div>
   </div>
 </div>
-
+</section>
 </body>
 </html>
