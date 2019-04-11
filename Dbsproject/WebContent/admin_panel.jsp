@@ -58,6 +58,107 @@
         </div>
       </div>
     </div>
+
+    <div class="columns">
+        <div class="column is-half">
+          <div class="card">
+           <div class="card-image is-flex is-horizontal-center">
+              <figure class="image is-128x128">
+             <img class="is-rounded" src="https://bulma.io/images/placeholders/128x128.png">
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="title"><center>View Kids</center></div>
+              <br />
+              <div class="subtitle"><center></center></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="column is-half">
+          <div>
+          <div class="card" id="show3">
+            <div class="card-image is-flex is-horizontal-center">
+              <figure class="image is-128x128">
+             <img class="is-rounded" src="https://bulma.io/images/placeholders/128x128.png">
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="title"><center>Add Caretaker</center></div>
+              <br />
+              <div class="subtitle"><center></center></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="columns">
+        <div class="column is-half">
+          <div class="card">
+           <div class="card-image is-flex is-horizontal-center">
+              <figure class="image is-128x128">
+             <img class="is-rounded" src="https://bulma.io/images/placeholders/128x128.png">
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="title"><center>View Caretaker</center></div>
+              <br />
+              <div class="subtitle"><center></center></div>
+            </div>
+          </div>
+        </div>
+        <div class="column is-half">
+          <div>
+          <div class="card">
+            <div class="card-image is-flex is-horizontal-center">
+              <figure class="image is-128x128">
+             <img class="is-rounded" src="https://bulma.io/images/placeholders/128x128.png">
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="title"><center>View Med Records</center></div>
+              <br />
+              <div class="subtitle"><center></center></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="columns">
+        <div class="column is-half">
+          <div class="card" id="show4">
+           <div class="card-image is-flex is-horizontal-center">
+              <figure class="image is-128x128">
+             <img class="is-rounded" src="https://bulma.io/images/placeholders/128x128.png">
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="title"><center>Update Med Records</center></div>
+              <br />
+              <div class="subtitle"><center></center></div>
+            </div>
+          </div>
+        </div>
+        <div class="column is-half">
+          <div>
+          <div class="card">
+            <div class="card-image is-flex is-horizontal-center">
+              <figure class="image is-128x128">
+             <img class="is-rounded" src="https://bulma.io/images/placeholders/128x128.png">
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="title"><center>View Adoptive Parents</center></div>
+              <br />
+              <div class="subtitle"><center></center></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </div>
 </div>
 
@@ -130,16 +231,6 @@
               </div>
 
               <div class="field">
-                <label class="label">Birth Parent ID:</label>
-                <div class="control has-icons-left has-icons-right">
-                  <input class="input is-rounded" name="bp_id" type="Number"
-                    placeholder="Enter birth parent id" min="1" maxlength="11"> <span
-                    class="icon is-small is-left"> 
-                  </span>
-                </div>
-              </div>
-
-              <div class="field">
                 <label class="label">Adoptive ID:</label>
                 <div class="control has-icons-left has-icons-right">
                   <input class="input is-rounded" name="ad_id" type="Number"
@@ -188,6 +279,126 @@
     </div>
   </div>
 
+  <div id="hidden3">
+    <div class="columns animated fadeInUp">
+      <div class="column is-half is-offset-one-quarter">
+        <div class="card">
+          <div class="card-content">
+            <form action="donate_back.jsp" method="POST">
+
+              <div class="field">
+                <label class="label">Caretaker ID:</label>
+                <div class="control has-icons-left has-icons-right">
+                  <input class="input is-rounded" name="cid" type="Number"
+                    placeholder="Enter caretaker id" required min="1" maxlength="11"> <span
+                    class="icon is-small is-left"> 
+                  </span>
+                </div>
+              </div>
+
+              <div class="field">
+                <label class="label">Social Security Number:</label>
+                <p class="control has-icons-left">
+                  <input class="input is-rounded" name="ssn" type="password"
+                    placeholder="Social Security Number" required pattern="^\s*-?[0-9]{12}\s*$"> <span
+                    class="icon is-small is-left"> <i class="fas fa-lock"></i>
+                  </span>
+                </p>
+              </div>
+
+              <div class="field">
+                <label class="label">Name:</label>
+                <div class="control has-icons-left has-icons-right">
+                  <input class="input is-rounded" name="name" type="text"
+                    placeholder="Enter name" required> <span
+                    class="icon is-small is-left"> <i class="fas fa-user"></i>
+                  </span>
+                </div>
+              </div>
+
+              <div class="field">
+                <label class="label">Phone:</label>
+                <div class="control has-icons-left has-icons-right">
+                  <input class="input is-rounded" name="contact_number" type="Number"
+                    placeholder="Enter phone number" pattern="^\s*-?[0-9]{10}\s*$" required> <span
+                    class="icon is-small is-left"> 
+                  </span>
+                </div>
+              </div>
+
+              <br>
+              <div class="field">
+                <div class="control">
+                  <center><button class="button is-link">Add</button></center>
+                </div>
+              </div>
+            </form>
+            <div class="field">
+              <div class="control">
+                <center><button class="button is-danger" id="close3"
+                  style="margin-top: 2vh;">Cancel</button></center>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="hidden4">
+    <div class="columns animated fadeInUp">
+      <div class="column is-half is-offset-one-quarter">
+        <div class="card">
+          <div class="card-content">
+            <form action="donate_back.jsp" method="POST">
+
+              <div class="field">
+                <label class="label">Med ID:</label>
+                <div class="control has-icons-left has-icons-right">
+                  <input class="input is-rounded" name="med_id" type="Number"
+                    placeholder="Enter caretaker id" required min="1" maxlength="11"> <span
+                    class="icon is-small is-left"> 
+                  </span>
+                </div>
+              </div>
+
+              <div class="field">
+                <label class="label">Medical Condition:</label>
+                <div class="control has-icons-left has-icons-right">
+                  <input class="input is-rounded" name="med_condition" type="text"
+                    placeholder="Enter condition" required> <span
+                    class="icon is-small is-left"> <i class="fas fa-user"></i>
+                  </span>
+                </div>
+              </div>
+              
+              <div class="field">
+                <label class="label">Condition Description:</label>
+                <div class="control">
+                <textarea class="textarea" placeholder="Enter description" name="description"></textarea>
+              </div>
+            </div>
+                
+
+              <br>
+              <div class="field">
+                <div class="control">
+                  <center><button class="button is-link">Add</button></center>
+                </div>
+              </div>
+           
+            <div class="field">
+              <div class="control">
+                <center><button class="button is-danger" id="close4"
+                  style="margin-top: 2vh;">Cancel</button></center>
+              </div>
+            </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 </body>
 </html>
