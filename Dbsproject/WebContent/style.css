@@ -102,14 +102,10 @@
 	padding-bottom: 20px;
 }
 
-.align
-{
-	margin-top: 10%;
-}
-
 #hidden
 {
 	display: none;
+	margin-bottom: 2em;
 }
 
 #hidden1
@@ -123,4 +119,15 @@
 	float: right;
 	margin-right: 10vw;
 	margin-top: 5vh;
+}
+
+#color
+{
+	background-color: hsl(48, 100%, 67%);
+}
+
+#hidden2
+{
+	display: none;
+	margin-bottom: 2em;
 }
