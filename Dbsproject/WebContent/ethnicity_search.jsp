@@ -6,12 +6,22 @@
 <%@ page import="java.sql.*"%>
 </head>
 <body>
-<%
-		String ethnicity = request.getParameter("ethnicity");
+<%		String radio = request.getParameter("answer"); 
+		String searchtype = request.getParameter("searchtype");
 		Class.forName("com.mysql.jdbc.Driver");
 		Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/fosterdb", "root", "1234");
 		Statement st = con.createStatement();
-		String query = "select * from kids where ethnicity='" + ethnicity + "'";
+		if("1".equals(radio)){
+		String query = "select * from kids where age='" + searchtype + "'";
+		}
+		else if("2".equals(radio)){
+		String query = "select * from kids where ethnicity='" + searchtype + "'";
+		}
+		else{
+		String query = "select * from kids where gender='" + searchtype + "'";
+		}
+		
+		
 		ResultSet rs = st.executeQuery(query);
 	%>
 	<%
