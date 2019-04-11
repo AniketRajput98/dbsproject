@@ -16,5 +16,13 @@ $(document).ready(function(){
    $("#close1").click(function(){
     $("#hidden1").hide();
   });
+
+   $("#show2").click(function(){
+    $("#hidden2").show();
+  });
+
+   $("#close2").click(function(){
+    $("#hidden2").hide();
+  });
 });
 
