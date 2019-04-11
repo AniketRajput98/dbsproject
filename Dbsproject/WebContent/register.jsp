@@ -17,7 +17,8 @@
 <script defer
   src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
 </head>
-<body class="animated fadeInUp" id="color">
+<body id="color">
+  <div class="animated fadeInUp">
   <div class="space"></div>
   <div class="field">
           <div class="control" style="margin-right:10vw;">
@@ -114,5 +115,6 @@
   </div>
   </div>
   <div class="space"></div>
+</div>
 </body>
 </html>
