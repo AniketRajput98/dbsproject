@@ -1,9 +1,16 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
+<html class="magic">
 <head>
-
+<style>
+	.magic
+{
+	background-color: hsl(48, 100%, 67%);
+	min-height : 100vh;
+	min-width : 100vw;
+}
+</style>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Donation Logs</title>
@@ -18,17 +25,19 @@
 </head>
 <body>
 	<%
-		Class.forName("com.mysql.jdbc.Driver");
-		Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/fosterdb", "root", "1234");
-		Statement st = con.createStatement();
-		String query = "select * from donation";
-		ResultSet rs = st.executeQuery(query);
-	%>
-
+    Class.forName("com.mysql.jdbc.Driver");
+    Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/fosterdb", "root", "1234");
+    Statement st = con.createStatement();
+    String query = "select * from donation";
+    ResultSet rs = st.executeQuery(query);
+  %>
 	<div class="space"></div>
-	<div class="columns">
-		<div class="column is-half is-offset-one-quarter">
+	<div class="columns animated fadeInUp" id="correction">
+		<div class="column">
 			<div class="card">
+				<div class="card-header">
+					<div class="card-header-title is-centered">Donation Logs</div>
+				</div>
 				<div class="card-content">
 
 					<table style="width: 100%">
@@ -40,8 +49,8 @@
 						</tr>
 
 						<%
-							while (rs.next()) {
-						%>
+              while (rs.next()) {
+            %>
 						<tr>
 							<td><%=rs.getString("userid")%></td>
 							<td><%=rs.getString("ssn")%></td>
@@ -49,11 +58,20 @@
 							<td><%=rs.getString("donated_money")%></td>
 						</tr>
 						<%
-							}
-						%>
+              }
+            %>
 					</table>
 				</div>
 			</div>
 		</div>
+	</div>
+	<div class="field">
+		<div class="control">
+			<div class="btn btn-danger btn-md">
+				<button class="button is-danger logs"
+					OnClick=" location.href='admin_panel.jsp' ">Back</button>
+			</div>
+		</div>
+</div>
 </body>
 </html>
