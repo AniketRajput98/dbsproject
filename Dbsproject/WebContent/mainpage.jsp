@@ -12,11 +12,11 @@
     <script defer src="script.js" type="text/javascript"></script>
   </head>
   <body>
-  <section class="hero is-fullheight is-bold  animated fadeInUp is-warning" id="b3">
+  <section class="hero is-fullheight is-bold is-warning" id="b3">
     <div class="control">
-          <button class="button is-danger logs" OnClick=" location.href='logout.jsp' ">Logout</button>
+          <button class="button is-danger logs">Logout</button>
       </div>
-  <div class="hero-body">
+  <div class="hero-body animated fadeInUp">
     <div class="container">
       <h1 class="title main-title">
         <center>Welcome to Foster Care System</center>
@@ -55,85 +55,84 @@
   </div>
 
 
-<div>
-<div class="columns animated fadeInUp">
-  <div class="column is-half is-offset-one-quarter" id="hidden">
-  <div class="card">
-  <div class="card-content">
-    <form action="donate_back.jsp" method="POST">
-<div class="field">
-  <label class="label">First name:</label>
-  <div class="control has-icons-left has-icons-right">
-    <input class="input is-rounded" name="firstname" type="text" placeholder="Enter First Name" required>
-    <span class="icon is-small is-left">
-      <i class="fas fa-user"></i>
-    </span>
-  </div>
-</div>
-<div class="field">
-  <label class="label">Last name:</label>
-  <div class="control has-icons-left has-icons-right">
-    <input class="input is-rounded" name="lastname" type="text" placeholder="Enter Last Name">
-    <span class="icon is-small is-left">
-      <i class="fas fa-user"></i>
-    </span>
-  </div>
-</div>
-<div class="field">
-  <label class="label">Email:</label>
-  <div class="control has-icons-left has-icons-right">
-    <input class="input is-rounded" name="email" type="email" placeholder="Enter Email ID" required>
-    <span class="icon is-small is-left">
-      <i class="fas fa-envelope"></i>
-    </span>
-  </div>
-</div>
+<div id="hidden" style="display: none">
+    <div class="columns animated fadeInUp">
+      <div class="column is-half is-offset-one-quarter">
+        <div class="card">
+          <div class="card-content">
+            <form action="donate_back.jsp" method="POST">
+              <div class="field">
+                <label class="label">First name:</label>
+                <div class="control has-icons-left has-icons-right">
+                  <input class="input is-rounded" name="firstname" type="text"
+                    placeholder="Enter First Name" required> <span
+                    class="icon is-small is-left"> <i class="fas fa-user"></i>
+                  </span>
+                </div>
+              </div>
+              <div class="field">
+                <label class="label">Last name:</label>
+                <div class="control has-icons-left has-icons-right">
+                  <input class="input is-rounded" name="lastname" type="text"
+                    placeholder="Enter Last Name"> <span
+                    class="icon is-small is-left"> <i class="fas fa-user"></i>
+                  </span>
+                </div>
+              </div>
+              <div class="field">
+                <label class="label">Email:</label>
+                <div class="control has-icons-left has-icons-right">
+                  <input class="input is-rounded" name="email" type="email"
+                    placeholder="Enter Email ID" required> <span
+                    class="icon is-small is-left"> <i
+                    class="fas fa-envelope"></i>
+                  </span>
+                </div>
+              </div>
 
-<div class="field">
-  <label class="label">Social Security Number:</label>
-  <p class="control has-icons-left">
-    <input class="input is-rounded" name="ssn" type="password" placeholder="Social Security Number">
-    <span class="icon is-small is-left">
-      <i class="fas fa-lock"></i>
-    </span>
-  </p>
-</div>
+              <div class="field">
+                <label class="label">Social Security Number:</label>
+                <p class="control has-icons-left">
+                  <input class="input is-rounded" name="ssn" type="password"
+                    placeholder="Social Security Number" required> <span
+                    class="icon is-small is-left"> <i class="fas fa-lock"></i>
+                  </span>
+                </p>
+              </div>
 
-<div class="field">
-  <label class="label">Username:</label>
-  <div class="control has-icons-left has-icons-right">
-    <input class="input is-rounded" name="userid" type="text" placeholder="Enter Username" required>
-    <span class="icon is-small is-left">
-      <i class="fas fa-user"></i>
-    </span>
-  </div>
-</div>
+              <div class="field">
+                <label class="label">Donate Item:</label>
+                <div class="control has-icons-left has-icons-right">
+                  <input class="input is-rounded" name="item" type="text"
+                    placeholder="Enter Item Names" required>
+                </div>
+              </div>
 
-<div class="field">
-  <label class="label">Donate Item:</label>
-  <div class="control has-icons-left has-icons-right">
-    <input class="input is-rounded" name="item" type="text" placeholder="Enter Item Names" required>
+              <div class="field">
+                <label class="label">Donate Funds:</label>
+                <div class="control has-icons-left has-icons-right">
+                  <input class="input is-rounded" name="money" type="Number"
+                    placeholder="Enter amount" min="1000" max="200000">
+                </div>
+              </div>
+              <br>
+              <div class="field">
+                <div class="control">
+                  <center><button class="button is-link">Donate</button></center>
+                </div>
+              </div>
+            </form>
+            <div class="field">
+              <div class="control">
+                <center><button class="button is-danger" id="close"
+                  style="margin-top: 2vh;">Cancel</button></center>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-</div>
-
-<div class="field">
-  <label class="label">Donate Funds:</label>
-  <div class="control has-icons-left has-icons-right">
-    <input class="input is-rounded" name="money" type="Number" placeholder="Enter amount" required min="0" max="200000">
-  </div>
-</div>
-<br>
-<div class="field is-grouped">
-  <div class="control">
-    <button class="button is-link">Donate</button>
-  </div>
-  <div class="control" id="close">
-    <button class="button is-text">Cancel</button>
-</div>
-</div>
-</div>
-</div>
-</div>
 
 <div class="column is-half is-offset-one-quarter" id="hidden1">
   <div class="card">
@@ -141,7 +140,7 @@
       <form action="search.jsp" method="POST">
           <div class="control">
               <label class="radio">
-                <input type="radio" name="answer">
+                <input type="radio" name="answer" checked="checked">
                 Age
               </label>
               <br>
