@@ -23,7 +23,7 @@
  ![](images/reg_form.png)
  
  *Dashboard*
- ![](images/dashboard.png)
+ ![](images/dasboard.png)
  
  *admin_panel*
  ![](images/admin_panel.png)
