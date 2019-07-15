@@ -16,5 +16,5 @@
 
 #WebSite preview
  *Login*
- ![](images/login.pg)
+ ![](images/login.png)
 
