@@ -15,6 +15,17 @@
   Download MYsql connector
 
 #WebSite preview
- *Login*
+ 
+ *Login page*
  ![](images/login.png)
-
+ 
+ *Registration page*
+ ![](images/reg_form.png)
+ 
+ *Dashboard*
+ ![](images/dashboard.png)
+ 
+ *admin_panel*
+ ![](images/admin_panel.png)
+ 
+ 
