@@ -1,31 +1,31 @@
-#Foster care Management system 
+#Foster care Management system #
 
-  •	It is a Website which can be used to connect people who are looking to adopt a foster kid from their nearby foster home.
+  *	It is a Website which can be used to connect people who are looking to adopt a foster kid from their nearby foster home.
   
-  •	Interested people can Sign up and based on background check-up they will be allowed to adopt a kid
+  *	Interested people can Sign up and based on background check-up they will be allowed to adopt a kid
 
-#Prerequisites
+#Prerequisites#
 
-  Install an IDE(eg:- Eclipse)
+  * Install an IDE(eg:- Eclipse)
   
-  Install Apache server
+  * Install Apache server
   
-  Install MySQL
+  * Install MySQL
   
-  Download MYsql connector
+  * Download MYsql connector
 
-#WebSite preview
+#WebSite preview#
  
- *Login page*
+ ##Login page##
  ![](images/login.png)
  
- *Registration page*
+ ##Registration page##
  ![](images/reg_form.png)
  
- *Dashboard*
+ ##Dashboard##
  ![](images/dasboard.png)
  
- *admin_panel*
+ ##admin_panel##
  ![](images/admin_panel.png)
  
  
